@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: dynamo-router
-          image: nvcr.io/nvidia/dynamo:0.3.0
+          image: nvcr.io/nvidia/dynamo:latest
           command: ["dynamo", "serve"]
           args: ["--config=/etc/dynamo/pipeline.yaml", "--component=Frontend"]
           ports:
